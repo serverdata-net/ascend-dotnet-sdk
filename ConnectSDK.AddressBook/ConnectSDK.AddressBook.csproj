@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <NuspecFile>AscendUC.SDK.AddressBook.nuspec</NuspecFile>
+    <TargetFramework>net8.0</TargetFramework>
+    <NuspecProperties>version=$(PackageVersion);configuration=$(Configuration)</NuspecProperties>
+  </PropertyGroup>
+  <ItemGroup>
+    
+    <PackageReference Include="System.Text.Json" Version="9.0.4" />
+    <ProjectReference Include="..\ConnectSDK.Common\ConnectSDK.Common.csproj" Version="[2.0,3.0)" />
+  </ItemGroup>
+</Project>

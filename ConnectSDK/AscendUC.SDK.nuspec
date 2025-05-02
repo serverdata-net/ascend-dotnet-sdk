@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AscendUC.SDK</id>
+    <version>$version$</version>
+    <authors>Ascend</authors>
+    <owners>ServerData</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://developer.ascendcloud.com/index.html</projectUrl>
+    <repository type="git" url="https://github.com/serverdata-net/ascend-dotnet-sdk"/>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Ascend API SDK for .NET</description>
+    <copyright>serverdata.net, Inc.</copyright>
+    <tags>SDK Ascend</tags>
+    <icon>icon.png</icon>
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="AscendUC.SDK.AddressBook" version="[2.0,3.0)" exclude="Build,Analyzers" />
+        <dependency id="AscendUC.SDK.Analytics" version="[2.0,3.0)" exclude="Build,Analyzers" />
+        <dependency id="AscendUC.SDK.Meetings" version="[2.0,3.0)" exclude="Build,Analyzers" />
+        <dependency id="AscendUC.SDK.Voice" version="[2.0,3.0)" exclude="Build,Analyzers" />
+        <dependency id="AscendUC.SDK.Common" version="[2.0,3.0)" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <summary> A summary of your package </summary>
+  </metadata>
+  <files>
+    <file src="bin\Debug\net8.0\ConnectSDK.dll" target="lib/net8.0"/>
+    <file src="..\icon.png" target=""/>
+  </files>
+</package>

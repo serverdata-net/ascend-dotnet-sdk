@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AscendUC.SDK.Voice</id>
+    <version>$version$</version>
+    <authors>Ascend</authors>
+    <owners>ServerData</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://developer.ascendcloud.com/index.html</projectUrl>
+    <repository type="git" url="https://github.com/serverdata-net/ascend-dotnet-sdk"/>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Ascend API SDK for .NET to make voice calls</description>
+    <copyright>serverdata.net, Inc.</copyright>
+    <tags>SDK Ascend VoiceAPI Voice</tags>
+    <icon>icon.png</icon>
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.AspNetCore.SignalR" version="1.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.SignalR.Client" version="9.0.4" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.SignalR.Common" version="9.0.4" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.SignalR.Core" version="1.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="9.0.4" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Console" version="9.0.4" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="9.0.4" exclude="Build,Analyzers" />
+        <dependency id="AscendUC.SDK.Common" version="[2.0,3.0)" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Debug\net8.0\ConnectSDK.Voice.dll" target="lib/net8.0"/>
+    <file src="..\icon.png" target=""/>
+  </files>
+</package>

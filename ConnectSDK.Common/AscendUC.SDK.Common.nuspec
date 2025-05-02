@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package>
+	<metadata>
+		<id>AscendUC.SDK.Common</id>
+		<version>$version$</version>
+		<authors>Ascend</authors>
+		<owners>ServerData</owners>
+		<license type="expression">MIT</license>
+		<projectUrl>https://developer.ascendcloud.com/index.html</projectUrl>
+		<repository type="git" url="https://github.com/serverdata-net/ascend-dotnet-sdk"/>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>
+			A shared package used by the Ascend API SDK packages.
+			Note: Do not install this package manually, it will be added as a prerequisite by
+			other packages that require it.
+		</description>
+		<copyright>serverdata.net, Inc.</copyright>
+		<tags>SDK Ascend Common</tags>
+		<icon>icon.png</icon>
+    	<dependencies>
+			<group targetFramework="net8.0">
+				<dependency id="System.Text.Json" version="9.0.4" exclude="Build,Analyzers" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="bin\Debug\net8.0\ConnectSDK.Common.dll" target="lib\net8.0\" />
+		<file src="..\icon.png" target=""/>
+	</files>
+</package>
