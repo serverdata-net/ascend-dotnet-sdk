@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
-		<id>AscendUC.SDK</id>
+		<id>AscendUC.SDK.Auth</id>
 		<version>$version$</version>
 		<authors>Ascend</authors>
 		<owners>ServerData</owners>
